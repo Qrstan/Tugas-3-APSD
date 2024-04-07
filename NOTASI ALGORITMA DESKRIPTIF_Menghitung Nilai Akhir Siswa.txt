@@ -1,0 +1,50 @@
+NOTASI ALGORITMA DESKRIPTIF
+
+> Program menghitung nilai akhir siswa dari kursus yang diikutinya
+
+Ketentuan:
+Nama Siswa, Nilai Keaktifan, Nilai Tugas, dan Nilai Ujian diinput.
+Proses yang dilakukan untuk mendapatkan nilai murni dari masing-masing nilai adalah:
+Nilai Murni Keaktifan = Nilai Keaktifaan dikalikan dengan 20%.
+Nilai Murni Tugas = Nilai Tugas dikalikan dengan 30%.
+Nilai Murni Ujian = Nilai Ujian dikalikan dengan 50%.
+Nilai Akhir adalah Nilai Murni Keaktifan + Nilai Murni Tugas + Nilai Murni Ujian.
+Ketentuan Nilai Huruf:
+Jika nilai Akhir yang dihasilkan lebih besar dari 80, maka mendapat grade “A”.
+Jika nilai Akhir yang dihasilkan lebih besar dari 70, maka mendapat grade “B”.
+Jika nilai Akhir yang dihasilkan lebih besar dari 56, maka mendapat grade “C”.
+Jika nilai Akhir yang dihasilkan lebih besar dari 46, maka mendapat grade “D”.
+Selain itu mendapat grade “E”.
+
+Langkah-langkah:
+
+1. Mulai
+
+2. Inputkan nama siswa, nilai keaktifan, nilai tugas, dan nilai ujian
+
+3. Hitung nilai akhir dengan fungsi hitungNilaiAkhir(nilaiKeaktifan, nilaiTugas, nilaiUjian):
+    3.1. Hitung nilai murni keaktifan (nilaiKeaktifan * 20%)
+    3.2. Hitung nilai murni tugas (nilaiTugas * 30%)
+    3.3. Hitung nilai murni ujian (nilaiUjian * 50%)
+    3.4. Nilai akhir = nilai murni keaktifan + nilai murni tugas + nilai murni ujian
+    3.5. Kembalikan nilai akhir
+
+4. Tentukan grade dengan fungsi tentukanGrade(nilaiAkhir):
+    4.1. Jika nilai akhir > 80, maka grade = 'A'
+    4.2. Jika nilai akhir > 70, maka grade = 'B'
+    4.3. Jika nilai akhir > 56, maka grade = 'C'
+    4.4. Jika nilai akhir > 46, maka grade = 'D'
+    4.5. Selain itu, grade = 'E'
+    4.6. Kembalikan grade
+
+5. Tampilkan nilai persentase masing-masing:
+    5.1. Tampilkan "Siswa yang bernama [nama siswa]"
+    5.2. Tampilkan "Dengan Nilai Persentasi Yang dihasilkan."
+    5.3. Tampilkan "Nilai Keaktifan * 20% : [nilai murni keaktifan]"
+    5.4. Tampilkan "Nilai Tugas * 30% : [nilai murni tugas]"
+    5.5. Tampilkan "Nilai Ujian * 50% : [nilai murni ujian]"
+
+6. Tampilkan hasil nilai akhir dan grade:
+    6.1. Tampilkan "Jadi Siswa yang bernama [nama siswa] memperoleh nilai akhir sebesar [nilai akhir] dengan grade [grade]"
+
+7. Selesai

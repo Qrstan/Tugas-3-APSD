@@ -1,0 +1,62 @@
+NOTASI ALGORITMA DESKRIPTIF
+
+> Program menghitung gaji karyawan kontrak
+
+Ketentuan:
+
+Gaji pokok kepada karyawan kontraknya sebesar Rp. 300,000 per bulan, dengan memperoleh tunjangan-tunjangan sebagai berikut:
+
+Tunjangan Jabatan:
+Golongan 1: 5%
+Golongan 2: 10%
+Golongan 3: 15% (Jika seorang karyawan tersebut dengan golongan 3, maka mendapatkan tunjangan sebesar 15% * Rp. 300,000)
+Tunjangan Pendidikan:
+Tingkat Persentase
+Pendidikan SMA: 2.5%
+Pendidikan D1: 5%
+Pendidikan D3: 20%
+Pendidikan S1: 30% (Jika seorang karyawan tersebut dengan golongan 3, maka mendapatkan tunjangan sebesar 15% * Rp. 300,000)
+Honor Lembur:
+Jumlah jam kerja normal sebanyak 8 jam, Honor lembur diberikan jika jumlah jam kerja lebih dari 8 jam, maka kelebihan jam kerja tersebut dikalikan dengan Rp. 3500 untuk setiap kelebihan jam kerja karyawan tersebut.
+
+Langkah-langkah:
+
+1. Mulai program.
+2. Tampilkan judul program "PROGRAM HITUNG NILAI AKHIR".
+3. Input data karyawan:
+    2.1. Memasukkan nama karyawan
+    2.2. Memasukkan golongan jabatan (1/2/3)
+    2.3. Memasukkan tingkat pendidikan (1=SMA, 2=D1, 3=D3, 4=S1)
+    2.4. Memasukkan jumlah jam kerja
+
+3. Inisialisasi variabel:
+    3.1. gajiPokok = 300000
+    3.2. tunjanganJabatan = 0
+    3.3. tunjanganPendidikan = 0
+    3.4. honorLembur = 0
+
+4. Hitung tunjangan jabatan:
+    4.1. Jika golongan jabatan == 3, maka tunjanganJabatan = 0.15 * gajiPokok
+    4.2. Jika golongan jabatan == 2, maka tunjanganJabatan = 0.1 * gajiPokok
+    4.3. Jika golongan jabatan == 1, maka tunjanganJabatan = 0.05 * gajiPokok
+
+5. Hitung tunjangan pendidikan:
+    5.1. Jika tingkat pendidikan == 4, maka tunjanganPendidikan = 0.3 * gajiPokok
+    5.2. Jika tingkat pendidikan == 3, maka tunjanganPendidikan = 0.2 * gajiPokok
+    5.3. Jika tingkat pendidikan == 2, maka tunjanganPendidikan = 0.05 * gajiPokok
+    5.4. Jika tingkat pendidikan == 1, maka tunjanganPendidikan = 0.025 * gajiPokok
+
+6. Hitung honor lembur:
+    6.1. Jika jumlah jam kerja > 8, maka honorLembur = (jumlahJamKerja - 8) * 3500
+
+7. Hitung total gaji:
+    7.1. totalGaji = gajiPokok + tunjanganJabatan + tunjanganPendidikan + honorLembur
+
+8. Output hasil perhitungan:
+    8.1. Menampilkan nama karyawan
+    8.2. Menampilkan tunjangan jabatan
+    8.3. Menampilkan tunjangan pendidikan
+    8.4. Menampilkan honor lembur
+    8.5. Menampilkan total gaji
+
+9. Selesai

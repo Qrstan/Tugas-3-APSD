@@ -1,0 +1,27 @@
+NOTASI ALGORITMA DESKRIPTIF
+
+> Program menghitung nilai rata-rata seorang siswa dan menentukan status juaranya
+
+Ketentuan:
+Nama Siswa, Nilai Pertandingan I, Nilai Pertandingan II, Nilai Pertandingan III diinput.
+Nilai Rata-rata merupakan hasil dari Nilai Pertandingan I, II dan III dibagi dengan 3.
+Ketentuan Juara:
+Jika nilai rata-rata yang dihasilkan lebih besar dari 80, maka menjadi Juara I.
+Jika nilai rata-rata yang dihasilkan lebih besar dari 75, maka menjadi Juara II.
+Jika nilai rata-rata yang dihasilkan lebih besar dari 65, maka menjadi Juara III.
+Selain itu tidak juara.
+
+Langkah-langkah:
+
+1. Minta pengguna untuk memasukkan nama siswa.
+2. Minta pengguna untuk memasukkan nilai pertandingan I, II, dan III.
+3. Hitung rata-rata dari nilai pertandingan dengan cara:
+   a. Jumlahkan nilai pertandingan I, II, dan III.
+   b. Bagi jumlah nilai dengan 3.
+   c. Simpan hasil pembagian sebagai rata_rata.
+4. Tentukan status juara berdasarkan nilai rata-rata dengan cara:
+   a. Jika nilai rata-rata lebih besar dari 80, maka status juara adalah I.
+   b. Jika nilai rata-rata lebih besar dari 75, maka status juara adalah II.
+   c. Jika nilai rata-rata lebih besar dari 65, maka status juara adalah III.
+   d. Jika tidak memenuhi kriteria di atas, maka status juara adalah tidak.
+5. Tampilkan nama siswa, nilai rata-rata, dan status juara sesuai format yang diminta.
